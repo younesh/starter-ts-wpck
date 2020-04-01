@@ -1,0 +1,28 @@
+{
+    "name": "starter-ts-wpck",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "start:dev": "webpack-dev-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/younesh/starter-ts-wpck.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/younesh/starter-ts-wpck/issues"
+    },
+    "homepage": "https://github.com/younesh/starter-ts-wpck#readme",
+    "devDependencies": {
+        "html-loader": "^1.0.0",
+        "html-webpack-plugin": "^4.0.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}
