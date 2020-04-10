@@ -1,2 +1,3 @@
-    import { bro } from "./bro"
-    console.log(bro("yns rak batal !"));
+    import { bro } from "./bro";
+    import "./styles/main.scss";
+    console.log(bro("no man ?   !"));
