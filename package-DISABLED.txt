@@ -1,0 +1,2 @@
+        "twig-html-loader": "^0.1.7",
+        "twig-loader": "^0.5.3",

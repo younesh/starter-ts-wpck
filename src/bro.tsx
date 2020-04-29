@@ -1,4 +1,4 @@
-const bro = (greeting) => {
+const bro = (greeting : string) => {
     return `${greeting}, bro !!! `
 }
 
