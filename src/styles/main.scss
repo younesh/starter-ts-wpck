@@ -1,4 +1,8 @@
-$bg: green;
+$bg: blue;
 body {
     background-color: $bg;
+}
+
+img {
+    max-width: 100%;
 }

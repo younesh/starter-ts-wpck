@@ -1,5 +1,6 @@
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const miniCsExtractPlugin = require("mini-css-extract-plugin");
+
 // const twigLoader = require("twig-loader");
 module.exports = {
     // Change le point d'entrée en index.tsx
@@ -56,25 +57,23 @@ module.exports = {
                 loader: "awesome-typescript-loader"
             },
             // compiling twig js : 
-            /* {
-                 test: /\.twig$/,
-                 use: [
-                     'twig-loader',
-                     'html-loader',
-
-                 ]
-             } */
+            {
+                test: /\.twig$/,
+                use: [
+                    'twig-loader'
+                    //  ,'html-loader',
+                ]
+            }
         ],
     },
+    node: {
+        fs: "empty" // avoids error messages
+    },
     plugins: [
-        new htmlWebpackPlugin({
-            template: "./src/index.html",
+        /* new htmlWebpackPlugin({
+            template: "./src/dialog.html.twig", // dialog.html  | "./src/index.html"
             filename: "./index.html"
-        }),
-        /* new twigLoader({
-            filename: "[name].html"
         }), */
-
         new miniCsExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
